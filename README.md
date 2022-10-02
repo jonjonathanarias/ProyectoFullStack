@@ -1,5 +1,5 @@
 
-# <div align="center">**SISTEMA DE GESTION Y CONTROL DE ESTACIONEMAIENTO**</div>
+# <div align="center">**SISTEMA DE GESTION Y CONTROL DE ESTACIONAMIENTO**</div>
 ---- 
 <div align="center">
 <img src="https://i.postimg.cc/XqmLjHMv/18516060.jpg" align="center" style="width:55%" />
