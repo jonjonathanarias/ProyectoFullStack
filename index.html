@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" type="image/png" href="Images/logo2.png"/>
+    <title>ParkingLot</title>
+</head>
+
+<body style="background-color:lightblue;">
+    
+    <header class="shadow">
+     
+        <div class="header-content d-flex justify-content-center p-2">
+            <img src="./Images/parking.svg" alt="" id="header-logo">
+            <div id="header-msg" class="ml-5 align-self-center">Parking Lot </div>  
+        
+        </div>
+        <div id="reloj" class="header-content d-flex justify-content-center p-2">
+            00 : 00 : 00
+           </div>
+    </header>
+    <div class="form-container mt-5">
+        <form class="w-50 mx-auto" id="formulario">            
+            <div class="form-group">
+                <label for="duenio">Dueño del automovil:</label>
+                <input type="text" class="form-control rounded-0 shadow-sm" id="owner" placeholder="Nombre y Apellido">
+            </div>
+            <div class="form-group">
+                <label for="auto">Módelo del automovil:</label>
+                <input type="text" class="form-control rounded-0 shadow-sm" id="car" placeholder="Nombre especifico del automovil">
+            </div>
+            <div class="form-group">
+                <label for="patente">Patente:</label>
+                <input type="text" class="form-control rounded-0 shadow-sm" id="licensePlate" placeholder="numero de chapa patente">
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="entrada">Fecha de Entrada:</label>
+                    <input type="date" class="form-control rounded-0 shadow-sm" id="entryDate">
+                </div>
+                <div class="col-6">
+                    <label for="salida">Fecha de Salida:</label>
+                    <input type="date" class="form-control rounded-0 shadow-sm" id="exitDate">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <label for="entrada">Hora de Entrada:</label>
+                    <input type="time" class="form-control rounded-0 shadow-sm" id="entrada2">
+                </div>
+                <div class="col-6">
+                    <label for="salida">Hora de Salida:</label>
+                    <input type="time" class="form-control rounded-0 shadow-sm" id="salida2">
+                </div>
+            </div>
+            <button type="submit" class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne">Agregar automovil</button>
+            <form>
+                <a href="/cobros.html">
+                    <input type="button" value="Cobros"  class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne">
+                </a>
+            </form>
+        </form>
+    </div>
+    <div class="table-container mt-5 mb-5 w-75 mx-auto" >
+            <h5 class="text-center mb-3">Búsqueda de autos</h5>
+            <input type="text" class="w-100 mb-3" id="busqueda" placeholder="Búsqueda...">
+            <table class="table table-striped shadow " id="tabla">
+                    <thead class="text-white" id="cabecera">
+                      <tr>
+                        <th scope="col">Dueño</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Patente</th>
+                        <th scope="col">Fecha de Entrada</th>
+                        <th scope="col">Fecha de Salida</th>
+                        <th scope="col">Acción</th>
+                      </tr>
+                    </thead>
+                    <tbody id="Tabla">
+                     
+                    </tbody>
+                  </table>
+    </div>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/core.js"></script>
+</body>
+    
+</html>
