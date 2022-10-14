@@ -25,47 +25,16 @@
             00 : 00 : 00
            </div>
     </header>
-    <div class="form-container mt-5">
-        <form class="w-50 mx-auto" id="formulario">            
-            <div class="form-group">
-                <label for="duenio">Dueño del automovil:</label>
-                <input type="text" class="form-control rounded-0 shadow-sm" id="owner" placeholder="Nombre y Apellido">
-            </div>
-            <div class="form-group">
-                <label for="auto">Módelo del automovil:</label>
-                <input type="text" class="form-control rounded-0 shadow-sm" id="car" placeholder="Nombre especifico del automovil">
-            </div>
-            <div class="form-group">
-                <label for="patente">Patente:</label>
-                <input type="text" class="form-control rounded-0 shadow-sm" id="licensePlate" placeholder="numero de chapa patente">
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <label for="entrada">Fecha de Entrada:</label>
-                    <input type="date" class="form-control rounded-0 shadow-sm" id="entryDate">
-                </div>
-                <div class="col-6">
-                    <label for="salida">Fecha de Salida:</label>
-                    <input type="date" class="form-control rounded-0 shadow-sm" id="exitDate">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <label for="entrada">Hora de Entrada:</label>
-                    <input type="time" class="form-control rounded-0 shadow-sm" id="entrada2">
-                </div>
-                <div class="col-6">
-                    <label for="salida">Hora de Salida:</label>
-                    <input type="time" class="form-control rounded-0 shadow-sm" id="salida2">
-                </div>
-            </div>
-            <button type="submit" class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne">Agregar automovil</button>
-            <form>
-                <a href="/cobros.html">
-                    <input type="button" value="Cobros"  class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne">
-                </a>
-            </form>
-        </form>
+            <a href="/login.html"><button class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne" onclick="alertar('se esta imprimiendo su turno')">Cerrar sesión</button>
+                <script type="text/javascript">
+                    function alertar(texto) { alert(texto);}</script></a>
+
+            <a href="/generadorticket.html"><button type="submit" class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne">Generar ticket QR</button></a>
+
+            <a href="/nuevocliente.html"><button type="submit" class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne">Agregar nuevo cliente</button></a>
+
+            <a href="/cobros.html"><input type="button" value="Cobros"  class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne"></a>
+            
     </div>
     <div class="table-container mt-5 mb-5 w-75 mx-auto" >
             <h5 class="text-center mb-3">Búsqueda de autos</h5>
@@ -76,9 +45,7 @@
                         <th scope="col">Dueño</th>
                         <th scope="col">Modelo</th>
                         <th scope="col">Patente</th>
-                        <th scope="col">Fecha de Entrada</th>
-                        <th scope="col">Fecha de Salida</th>
-                        <th scope="col">Acción</th>
+                       
                       </tr>
                     </thead>
                     <tbody id="Tabla">

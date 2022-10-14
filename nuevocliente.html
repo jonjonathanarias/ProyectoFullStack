@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./nuevocliente.css">
+</head>
+<body>
+    <div id="header-msg" class="ml-5 align-self-center">Carga de nuevo clliente </div>  
+    <div class="form-container mt-5">
+        <form class="w-50 mx-auto" id="formulario">            
+            <div class="form-group">
+                <label for="duenio">Dueño del automovil:</label>
+                <input type="text" class="form-control rounded-0 shadow-sm" id="owner" placeholder="Nombre y Apellido">
+            </div>
+            <div class="form-group">
+                <label for="auto">Módelo del automovil:</label>
+                <input type="text" class="form-control rounded-0 shadow-sm" id="car" placeholder="Nombre especifico del automovil">
+            </div>
+            <div class="form-group">
+                <label for="patente">Patente:</label>
+                <input type="text" class="form-control rounded-0 shadow-sm" id="licensePlate" placeholder="numero de chapa patente">
+            </div>
+    </div>
+    <div id="nuevocliente" class="nuevocliente">
+    <button class="btn" onclick="alertar('cliente cargado')">Generar nuevo cliente</button>
+    <a href="index.html"><button class="btn">Volver</button></a>
+    <script type="text/javascript">
+        function alertar(texto) { alert(texto);}</script>
+        </div>
+</body>
+</html>
