@@ -19,7 +19,7 @@ function matrix () {
     ctx.fillRect(0, 0, w, h);
   
     // Set color to green and font to 15pt monospace in the drawing context
-    ctx.fillStyle = '#0f0';
+    ctx.fillStyle = ' hsl(231, 97%, 55%)';
     ctx.font = '15pt monospace';
   
     // for each column put a random character at the end
