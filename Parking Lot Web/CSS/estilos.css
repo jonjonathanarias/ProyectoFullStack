@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: lightblue;
+}
+header{
+    background-color:  hsl(231, 97%, 55%);
+}
+#header-logo{
+    width:64px;
+    height:64px;
+}
+#header-msg{
+    font-size: 50px;
+    color: white;
+}
+#cabecera{
+   background-color: hsl(231, 80%, 55%);
+}
+
+footer{
+    background-color:  hsl(231, 97%, 55%);
+    font-size: 50px;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+
+
+

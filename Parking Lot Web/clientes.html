@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripción" content="Dedicao al Sistema de Gestion de Estacionamientos">
+    <meta name="keywords" content="Estacionamiento, Control de Gestion">
+    <title>Parking Lot - Sitio Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-content d-flex justify-content-center p-2">
+            <img src="./img/parking.svg" alt="" id="header-logo">
+            <div id="header-msg" class="ml-5 align-self-center">Parking Lot - Administrador 
+            </div>
+        </div>
+        <nav class="nav nav-pills flex-column flex-sm-row">
+            <a class="flex-sm-fill text-sm-center nav-link"  href="admin.html">Administrador</a>
+            <a class="flex-sm-fill text-sm-center nav-link active" href="clientes.html">Clientes</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="empleados.html">Empleados</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="facturacion.html">Facturación</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="tarifas.html">Modificar Tarifas</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="inventarios.html">Inventarios</a>
+          </nav>
+    </header>
+    <main>
+        <div class="table-container mt-5 mb-5 w-75 mx-auto" >
+            <h3 class="text-center mb-3">Búsqueda de Clientes</h3>
+            <input type="text" class="w-100 mb-3" id="busqueda" placeholder="Búscar Clientes">
+           
+           
+    </div>
+    <table class="table table-success table-striped">
+        <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Patente</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Vehiculo</th>
+              <th scope="col">Parcela</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>CCZ972</td>
+              <td>Martinez Fernando</td>
+              <td>Ford Ka</td>
+              <td>9B</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>IBB979</td>
+              <td>Jaime Lucrecia</td>
+              <td>Renault Clio</td>
+              <td>3A</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>AA978DR</td>
+              <td>Ford Fiesta</td>
+              <td>Baiutti Alejandro</td>
+              <td>7A</td>
+            </tr>
+          </tbody>
+    </table>
+
+    </main>
+    <footer>
+        <h4 class="d-flex justify-content-center">**Parking Lot - Todos Los Derechos Reservados - 2022**</h4>
+    </footer>
+</body>
+</html>
