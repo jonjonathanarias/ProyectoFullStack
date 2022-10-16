@@ -2,12 +2,18 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	background: lightblue;
 }
+
 
 body {
 	font-family: 'Open Sans', sans-serif;
+	background-image: url(/Images/imagen-aerea-estacionamiento-lleno-cerca-centro-comercial_76020-123.jpg);
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	
 }
+
 
 .contenedor {
 	max-width: 90%;
@@ -70,5 +76,48 @@ body {
 
 #header-msg{
     font-size: 50px;
-    color: hsl(231, 97%, 55%);
+    color: hsl(0, 0%, 100%);
+	background-color: hsl(231, 78%, 56%);
 }
+
+.header-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+  }
+  
+  .header-video video {
+	min-width: 100%;
+	min-height: 100%;
+  }
+  
+  .header-overlay {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #303952;
+	z-index: 1;
+	opacity: .85;
+  }
+  
+  .header-content {
+	z-index: 2;
+  }
+  
+  .header-content h1 {
+	font-size: 50px;
+	margin-bottom: 0;
+	font-family: 'Lobster', cursive;
+  }
+  
+  .header-content p {
+	font-size: 1.5rem;
+	display: block;
+	padding-bottom: 2rem;
+  }
+

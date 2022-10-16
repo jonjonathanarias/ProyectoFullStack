@@ -12,29 +12,28 @@
     <title>ParkingLot</title>
 </head>
 
-<body style="background-color:lightblue;">
+<body style="background: linear-gradient(70deg, rgb(49, 39, 39), rgb(111, 218, 245));">
     
-    <header class="shadow">
-     
+    <header class="header content">
+      <div class="header-video">
+        <video src="Images/pexels-oleh-shtohryn-5587732 (1).mp4" autoplay loop></video>
+      </div>
+      <div class="header-overlay"></div>
         <div class="header-content d-flex justify-content-center p-2">
             <img src="./Images/parking.svg" alt="" id="header-logo">
             <div id="header-msg" class="ml-5 align-self-center">Parking Lot </div>  
-        
-        </div>
-        <div id="reloj" class="header-content d-flex justify-content-center p-2">
-            00 : 00 : 00
-           </div>
+            <a href="/login.html"><button id="btn3" onclick="alertar('se esta imprimiendo su turno')">Cerrar sesión</button>
+              <script type="text/javascript">
+                  function alertar(texto) { alert(texto);}</script></a>   
     </header>
-            <a href="/login.html"><button class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne" onclick="alertar('se esta imprimiendo su turno')">Cerrar sesión</button>
-                <script type="text/javascript">
-                    function alertar(texto) { alert(texto);}</script></a>
-
-            <a href="/generadorticket.html"><button type="submit" class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne">Generar ticket QR</button></a>
-
-            <a href="/nuevocliente.html"><button type="submit" class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne">Agregar nuevo cliente</button></a>
-
-            <a href="/cobros.html"><input type="button" value="Cobros"  class="btn mx-auto d-block mt-5 rounded-0 shadow" id="btnOne"></a>
-            
+    </div>
+    <div id="reloj" class="header-content d-flex justify-content-center p-2">
+    00 : 00 : 00
+   </div>
+    <div class="btn-group btn-group-lg d-flex justify-content-center p-2">
+      <a href="/generadorticket.html"><button type="button" class="btn btn-default" id="btnOne">Ingresar patente</button></a>
+      <a href="/nuevocliente.html"><button type="button" class="btn btn-default" id="btnOne">Agregar nuevo cliente</button></a>
+      <a href="/cobros.html"><button type="button" class="btn btn-default" id="btnOne">Cobros</button></a>
     </div>
     <div class="table-container mt-5 mb-5 w-75 mx-auto" >
             <h5 class="text-center mb-3">Búsqueda de autos</h5>
