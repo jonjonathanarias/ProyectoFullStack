@@ -16,15 +16,15 @@ header{
     height:64px;
 }
 #header-msg{
-    font-size: 50px;
+    font-size: 2em;
     color: white;
 }
 #navbar{
     background-color: hsl(231, 80%, 79%);
    
 }
-.nav-link .active{
-    background-color:  hsl(231, 97%, 55%)
+.nav-link.active{
+    background-color:  hsl(231, 97%, 55%) !important;
 }
 .btn-seccion{
     background-color: hsl(231, 80%, 79%);
@@ -47,6 +47,16 @@ footer{
     
 }
 
+@media (max-width: 600px) {
+    header{
+        text-align: center;
+    }
+    .header-content{
+        flex-wrap: wrap;
+    }
+    .nav-link{
+        text-align: center !important;
 
-
-
+    }
+    
+}    
