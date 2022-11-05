@@ -47,6 +47,13 @@ footer{
     
 }
 
+/*para la Tabla De Clientes*/
+
+.centrado {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
 @media (max-width: 600px) {
     header{
         text-align: center;
