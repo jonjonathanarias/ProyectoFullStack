@@ -16,8 +16,11 @@ header{
     height:64px;
 }
 #header-msg{
-    font-size: 2em;
+    font-size: 2rem;
     color: white;
+}
+#cerrar-Sesion{
+    
 }
 #navbar{
     background-color: hsl(231, 80%, 79%);
@@ -33,6 +36,13 @@ header{
     padding: 0;
     margin: 0;
 }
+.titulo-pag{
+    padding: 10px;   
+    border-radius: 5px;
+    background-color: hsl(231, 97%, 55%);
+    color: white;
+    vertical-align: middle;
+}
 
 #cabecera{
    background-color: hsl(231, 80%, 55%);
@@ -45,6 +55,10 @@ footer{
     padding-top: 20px;
     padding-bottom: 20px;
     
+    
+}
+.conteiner-tabla{
+    margin-bottom: 90px;
 }
 
 /*para la Tabla De Clientes*/

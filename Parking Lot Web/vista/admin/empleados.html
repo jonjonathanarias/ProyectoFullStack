@@ -17,8 +17,8 @@
     <header>
         <div class="header-content d-flex justify-content-center p-2">
             <img src="./img/parking.svg" alt="" id="header-logo">
-            <div id="header-msg" class="ml-5 align-self-center">Parking Lot - Administrador 
-            </div>
+            <div id="header-msg" class="pl-3 pr-3 align-self-center">Parking Lot - Administrador </div>
+            <button type="button" id="cerrar-Sesion" class="btn btn-danger">Cerrar Sesion</button>
         </div>
         <nav class="nav nav-pills flex-column flex-sm-row" id="navbar">
             <a class="flex-sm-fill text-sm-center nav-link"  href="index.html">Administrador</a>
@@ -26,15 +26,35 @@
             <a class="flex-sm-fill text-sm-center nav-link active" href="empleados.html">Empleados</a>
             <a class="flex-sm-fill text-sm-center nav-link" href="facturacion.html">Facturación</a>
             <a class="flex-sm-fill text-sm-center nav-link" href="tarifas.html">Modificar Tarifas</a>
-            <a class="flex-sm-fill text-sm-center nav-link" href="inventarios.html">Inventarios</a>
           </nav>
     </header>
     <main>
-
-
+        <div class="conteiner-fluid mt-5 mb-5 w-50 mx-auto titulo-pag" >
+            <h3 class="text-center">Detalles De Empleados</h3>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="overflow-x: auto" style="width:auto">
+            <table id="tablaCliente" class="table table-success table-striped"  >
+              <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Rol</th>
+                    <th scope="col">Nombre Ususario</th>
+                    <th scope="col">Contraseña</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  
+                  
+                </tbody>
+            </thead>  
+          </table>
+        </div>
     </main>
     <footer>
-        <h4 class="d-flex justify-content-center">**Parking Lot - Todos Los Derechos Reservados - 2022**</h4>
+        <h6 class="d-flex justify-content-center">**Parking Lot - Todos Los Derechos Reservados - 2022**</h6>
     </footer>
 </body>
 </html>

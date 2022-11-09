@@ -29,7 +29,8 @@
     <header>
       <div class="header-content d-flex justify-content-center p-2">
         <img src="./img/parking.svg" alt="" id="header-logo">
-        <div id="header-msg" class="ml-5 align-self-center">Parking Lot - Administrador </div>
+        <div id="header-msg" class="pl-3 pr-3 align-self-center">Parking Lot - Administrador </div>
+        <button type="button" id="cerrar-Sesion" class="btn btn-danger">Cerrar Sesion</button>
       </div>
       <nav class="nav nav-pills flex-column flex-sm-row"id="navbar">
         <a class="flex-sm-fill text-sm-center nav-link"  href="index.html">Administrador</a>
@@ -37,15 +38,14 @@
         <a class="flex-sm-fill text-sm-center nav-link" href="empleados.html">Empleados</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="facturacion.html">Facturación</a>
         <a class="flex-sm-fill text-sm-center nav-link" href="tarifas.html">Modificar Tarifas</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="inventarios.html">Inventarios</a>
       </nav>
     </header>
     <main>
-      <div class="table-container mt-5 mb-5 w-75 mx-auto" >
-        <h3 class="text-center mb-3 ">Búsqueda de Clientes</h3>
+      <div class="conteiner-fluid mt-5 mb-5 w-50 mx-auto titulo-pag" >
+        <h3 class="text-center">Búsqueda de Clientes</h3>
       </div>
 
-      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12" style="overflow-x: auto">
+      <div class="conteiner-tabla col-sm-12 col-md-12 col-lg-12 col-xl-12" style="overflow-x: auto">
         <table id="tablaCliente" class="table table-success table-striped"  >
           <thead>
               <tr>
@@ -54,7 +54,7 @@
                 <th scope="col">Nombre</th>
                 <th scope="col">Vehiculo</th>
                 <th scope="col">Parcela</th>
-                <th scope="col">Opcines</th>
+                <th scope="col">Opciones</th>
               </tr>
             </thead>
             <tbody>
@@ -119,6 +119,39 @@
                 <td>Ponce Felipe</td>
                 <td>Fiat Toro</td>
                 <td>2A</td>
+                <td>
+                  <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
+                  <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+                 </td>
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>AIE 688</td>
+                <td>Martinez Franco</td>
+                <td>Ford Escord</td>
+                <td>3B</td>
+                <td>
+                  <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
+                  <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+                 </td>
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>IBC 989</td>
+                <td>Rizzi Monica</td>
+                <td>Honda Tornado</td>
+                <td>9A</td>
+                <td>
+                  <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
+                  <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+                 </td>
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>AE 963 VG</td>
+                <td>Gonzales Miguel</td>
+                <td>Ford Ranger</td>
+                <td>6A</td>
                 <td>
                   <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
                   <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
