@@ -4,9 +4,15 @@
     margin: 0;
     padding: 0;
 }
-
+html{
+    height: 100%;
+}
 body{
     background-color: lightblue;
+    margin: 0;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
 }
 header{
     background-color:  hsl(231, 97%, 55%);
@@ -50,11 +56,11 @@ header{
 
 footer{
     background-color:  hsl(231, 97%, 55%);
-    font-size: 50px;
+    width: 100%;
     color: white;
     padding-top: 20px;
     padding-bottom: 20px;
-    
+    margin-top: auto;
     
 }
 .conteiner-tabla{
