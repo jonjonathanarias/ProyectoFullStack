@@ -30,7 +30,7 @@
       <div class="header-content d-flex justify-content-center p-2">
         <img src="./img/parking.svg" alt="" id="header-logo">
         <div id="header-msg" class="pl-3 pr-3 align-self-center">Parking Lot - Administrador </div>
-        <button type="button" id="cerrar-Sesion" class="btn btn-danger">Cerrar Sesion</button>
+        <button type="button" id="cerrarSesion" class="btn btn-danger">Cerrar Sesion</button>
       </div>
       <nav class="nav nav-pills flex-column flex-sm-row"id="navbar">
         <a class="flex-sm-fill text-sm-center nav-link"  href="index.html">Administrador</a>
@@ -41,12 +41,12 @@
       </nav>
     </header>
     <main>
-      <div class="conteiner-fluid mt-5 mb-5 w-50 mx-auto titulo-pag" >
+      <div class="conteiner-fluid p-3 mt-5 mb-5 w-50 mx-auto titulo-pag" >
         <h3 class="text-center">Búsqueda de Clientes</h3>
       </div>
 
-      <div class="conteiner-tabla col-sm-12 col-md-12 col-lg-12 col-xl-12" style="overflow-x: auto">
-        <table id="tablaCliente" class="table table-success table-striped"  >
+      <div class=" col-sm-12 col-md-12 col-lg-12 col-xl-12 table-responsive" >
+        <table id="tablaCliente" class="table table-success table-striped "  >
           <thead>
               <tr>
                 <th scope="col">#</th>
@@ -58,7 +58,7 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+              <tr >
                 <th scope="row">1</th>
                 <td>CCZ972</td>
                 <td>Martinez Fernando</td>
@@ -66,8 +66,8 @@
                 <td>9B</td>
                 <td>
                   <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
-                  <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                 </td>
+                  <button onclick="Borrar()" class="btn btn-sm btn-danger" ><i class="fa-solid fa-trash-can"></i></button>
+                </td>
               </tr>
               <tr>
                 <th scope="row">2</th>
@@ -77,8 +77,8 @@
                 <td>3A</td>
                 <td>
                   <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
-                  <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                 </td>
+                  <button onclick="Borrar()" class="btn btn-sm btn-danger" ><i class="fa-solid fa-trash-can"></i></button>
+                </td>
               </tr>
               <tr>
                 <th scope="row">3</th>
@@ -88,8 +88,8 @@
                 <td>7A</td>
                 <td>
                   <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
-                  <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                 </td>
+                  <button onclick="Borrar()" class="btn btn-sm btn-danger" ><i class="fa-solid fa-trash-can"></i></button>
+                </td>
               </tr>
               <tr>
                 <th scope="row">4</th>
@@ -99,8 +99,8 @@
                 <td>8B</td>
                 <td>
                   <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
-                  <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                 </td>
+                  <button onclick="Borrar()" class="btn btn-sm btn-danger" ><i class="fa-solid fa-trash-can"></i></button>
+                </td>
               </tr>
               <tr>
                 <th scope="row">5</th>
@@ -110,8 +110,8 @@
                 <td>1A</td>
                 <td>
                   <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
-                  <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                 </td>
+                  <button onclick="Borrar()" class="btn btn-sm btn-danger" ><i class="fa-solid fa-trash-can"></i></button>
+                </td>
               </tr>
               <tr>
                 <th scope="row">6</th>
@@ -121,8 +121,8 @@
                 <td>2A</td>
                 <td>
                   <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
-                  <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                 </td>
+                  <button onclick="Borrar()" class="btn btn-sm btn-danger" ><i class="fa-solid fa-trash-can"></i></button>
+                </td>
               </tr>
               <tr>
                 <th scope="row">7</th>
@@ -132,8 +132,8 @@
                 <td>3B</td>
                 <td>
                   <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
-                  <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                 </td>
+                  <button onclick="Borrar()" class="btn btn-sm btn-danger" ><i class="fa-solid fa-trash-can"></i></button>
+                </td>
               </tr>
               <tr>
                 <th scope="row">8</th>
@@ -143,8 +143,8 @@
                 <td>9A</td>
                 <td>
                   <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
-                  <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                 </td>
+                  <button onclick="Borrar()" class="btn btn-sm btn-danger" ><i class="fa-solid fa-trash-can"></i></button>
+                </td>
               </tr>
               <tr>
                 <th scope="row">9</th>
@@ -154,8 +154,8 @@
                 <td>6A</td>
                 <td>
                   <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
-                  <button class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
-                 </td>
+                  <button onclick="Borrar()" class="btn btn-sm btn-danger" ><i class="fa-solid fa-trash-can"></i></button>
+                </td>
               </tr>
             </tbody>
         </thead>  
@@ -174,6 +174,7 @@
     <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
     <script type="text/javascript" src="js/dataTables.bootstrap5.min.js"></script>
     <!-- js Layout -->
+    <script src="js/main.js"></script>
     <script src="js/tablaCliente.js"></script>
 </body>
 </html>

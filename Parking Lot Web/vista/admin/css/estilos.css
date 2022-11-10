@@ -6,6 +6,7 @@
 }
 html{
     height: 100%;
+    
 }
 body{
     background-color: lightblue;
@@ -25,9 +26,7 @@ header{
     font-size: 2rem;
     color: white;
 }
-#cerrar-Sesion{
-    
-}
+
 #navbar{
     background-color: hsl(231, 80%, 79%);
    
@@ -49,6 +48,9 @@ header{
     color: white;
     vertical-align: middle;
 }
+h3{
+    font-size: 1.5rem;
+}
 
 #cabecera{
    background-color: hsl(231, 80%, 55%);
@@ -63,9 +65,7 @@ footer{
     margin-top: auto;
     
 }
-.conteiner-tabla{
-    margin-bottom: 90px;
-}
+
 
 /*para la Tabla De Clientes*/
 
