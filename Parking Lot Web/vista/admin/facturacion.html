@@ -18,7 +18,7 @@
         <div class="header-content d-flex justify-content-center p-2">
             <img src="./img/parking.svg" alt="" id="header-logo">
             <div id="header-msg" class="pl-3 pr-3 align-self-center">Parking Lot - Administrador</div>
-            <button type="button" id="cerrarSesion" class="btn btn-danger">Cerrar Sesion</button>
+            <button type="button" id="cerrarSesion" class="btn btn-danger ">Cerrar Sesion</button>
         </div>
         <nav class="nav nav-pills flex-column flex-sm-row" id="navbar">
             <a class="flex-sm-fill text-sm-center nav-link"  href="index.html">Administrador</a>
@@ -29,8 +29,37 @@
           </nav>
     </header>
     <main>
-
-
+        <div class="conteiner-fluid p-3 mt-5 mb-5 w-50 mx-auto titulo-pag" >
+            <h3 class="text-center">Generar Factura</h3>
+        </div>
+        <div class="facturador conteiner mx-auto d-flex justify-content-center ">
+            <select class="form-select" >
+                <option selected>Seleciona Tipo de Factura</option>
+                <option value="1">Factura A</option>
+                <option value="2">Factura B</option>
+                <option value="3">Factura C</option>
+                <option value="3">Consumidor Final</option>
+            </select>
+        </div>
+        <div class="conteiner d-flex flex-column   mx-auto w-50">
+            <form>
+                <div class="mb-3">
+                  <label  class="form-label">Clientes</label>
+                  <input class="form-control" placeholder="Numero de Cliente">
+                </div>
+                <div class="mb-3">
+                  <label  class="form-label">Periodo De Facturación</label>
+                  <input  class="form-control" placeholder="Indicar El Preiodo De Facturación">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" >
+                  <label class="form-check-label" >Enviar Factura Al Mail</label>
+                </div>
+                <div class="d-flex justify-content-center mb-3">
+                    <button type="submit" class="jus btn btn-primary">Generar Factura</button>
+                </div>
+              </form>
+        </div>
     </main>
     <footer>
         <h6 class="d-flex justify-content-center">**Parking Lot - Todos Los Derechos Reservados - 2022**</h6>  

@@ -65,6 +65,31 @@ footer{
     margin-top: auto;
     
 }
+/*Tabla de tarifas*/
+.tabla-tarifas{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.Titulo-Tarifa-periodo{
+    background-color:  hsl(231, 97%, 55%);
+    width: 100%;
+    color: white;
+    vertical-align: middle;
+}
+/*Para seccion Facturacion*/
+.facturador{
+    background-color: azure;
+    width: 300px;
+    padding: 10px;
+    border-style: 1px ;
+    border-radius: 5px;
+    
+}
 
 
 /*para la Tabla De Clientes*/
