@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripción" content="Dedicao al Sistema de Gestion de Estacionamientos">
+    <meta name="keywords" content="Estacionamiento, Control de Gestion">
+    <title>Parking Lot - Sitio Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+    />
+    <!--Estilos Layout-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-content d-flex justify-content-center p-2">
+            <img src="./img/parking.svg" alt="" id="header-logo">
+            <div id="header-msg" class="pl-3 pr-3 align-self-center">Parking Lot - Administrador </div>
+            <button type="button" id="cerrarSesion" class="btn btn-danger">Cerrar Sesion</button>
+        </div>
+        <nav class="nav nav-pills flex-column flex-sm-row" id="navbar">
+            <a class="flex-sm-fill text-sm-center nav-link"  href="index.html">Administrador</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="clientes.html">Clientes</a>
+            <a class="flex-sm-fill text-sm-center nav-link active" href="empleados.html">Empleados</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="facturacion.html">Facturación</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="tarifas.html">Modificar Tarifas</a>
+          </nav>
+    </header>
+    <main>
+        <div class="conteiner-fluid p-3 mt-5 mb-5 w-50 mx-auto titulo-pag" >
+            <h3 class="text-center">Detalles De Empleados</h3>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 table-responsive" >
+            <table id="tablaCliente" class="table table-success table-striped"  >
+                <thead class="centrado">
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Telefono</th>
+                    <th scope="col">Rol</th>
+                    <th scope="col">Nombre Ususario</th>
+                    <th scope="col">Contraseña</th>
+                    <th scope="col">Opciones</th>
+                  </tr>
+                </thead>
+                <tbody class="centrado">
+                    <tr>
+                        <th scope="row">1</th>
+                        <th>Martinez</th>
+                        <th>Carlos</th>
+                        <th>3525-768966</th>
+                        <th>Empleado</th>
+                        <th>MartinezCarlos</th>
+                        <th>****</th>
+                        <th>
+                            <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
+                            <button onclick="Borrar()" class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <th>Baronetti</th>
+                        <th>Sandra</th>
+                        <th>351-5673289</th>
+                        <th>Empleado</th>
+                        <th>BaronettiSandra</th>
+                        <th>****</th>
+                        <th>
+                            <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
+                            <button onclick="Borrar()" class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+                        </th>
+                    </tr>
+                    <tr id="col3">
+                        <th scope="row">3</th>
+                        <th>Bustos</th>
+                        <th>Fernando</th>
+                        <th>3543-657891</th>
+                        <th>Empleado</th>
+                        <th>BustosFernando</th>
+                        <th>****</th>
+                        <th>
+                            <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
+                            <button onclick="Borrar()" class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <th>Soria</th>
+                        <th>Marcela</th>
+                        <th>3522-7756372</th>
+                        <th>Empleado</th>
+                        <th>SoriaMarcela</th>
+                        <th>****</th>
+                        <th>
+                            <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
+                            <button onclick="Borrar()" class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="row">5</th>
+                        <th>Salucci</th>
+                        <th>Stella</th>
+                        <th>351-5432100</th>
+                        <th>Empleado</th>
+                        <th>SalucciEstella</th>
+                        <th>****</th>
+                        <th>
+                            <button class="btn btn-sm btn-primary"><i class="fa-solid fa-pencil"></i></button>
+                            <button onclick="Borrar()" class="btn btn-sm btn-danger"><i class="fa-solid fa-trash-can"></i></button>
+                        </th>
+                    </tr>
+                </tbody>
+            
+            </table>
+        </div>
+    </main>
+    <footer>
+        <h6 class="d-flex justify-content-center">**Parking Lot - Todos Los Derechos Reservados - 2022**</h6>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>

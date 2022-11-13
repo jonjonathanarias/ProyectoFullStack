@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+
+}
+html{
+    height: 100%;
+    
+}
+body{
+    
+    margin: 0;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+canvas {
+    width: 100%;
+    height: 100vh;
+    display: block;
+    position: relative;
+}
+
+.logo {
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.logo img {
+    width: 20%;
+    height: 20%;
+    border: #fff 1px solid;
+    border-radius: 50%;
+    margin-top: 10%;
+}
+footer{
+    
+    width: 100%;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 100%;
+    
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80vh;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    text-align: center;
+    align-items: center;
+    padding: 20px 25px;
+}
+
+form .title {
+    color: white;
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+form label {
+    margin-bottom: 35px;
+}
+
+form label .fa-solid {
+    font-size: 20px;
+    color: #6E85B7;
+    margin-right: 10px;
+}
+
+form label input {
+    outline: none;
+    border: none;
+    color: #252525;
+    border-bottom: solid 1px #083AA9;
+    padding: 0 5px;
+    font-size: 18px;
+}
+
+form label input::placeholder {
+    color: #002E94;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.button {
+    color: #fff;
+    border: none;
+    background: linear-gradient(to right, #4b09e6, #27c5f5);
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 20%;
+    margin-bottom: 10px;
+}
+
+.button:hover {
+    background: linear-gradient(to right, #27c5f5, #4b09e6);
+}
+
+#username {
+    background-color: #C4D7E0;
+    border-radius: 10px;
+    font-size: 1.6rem;
+
+}
+
+#password {
+    background-color: #C4D7E0;
+    border-radius: 10px;
+    font-size: 1.6rem;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20vh;
+}
+
+#contacto{
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+#contacto:hover{
+    color: #27c5f5;
+    padding: 5px;
+    border: 1px solid #27c5f5;
+    border-radius: 5px;
+}

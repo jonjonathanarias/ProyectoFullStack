@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripción" content="Dedicao al Sistema de Gestion de Estacionamientos">
+    <meta name="keywords" content="Estacionamiento, Control de Gestion">
+    <title>Parking Lot - Sitio Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-content d-flex justify-content-center p-2">
+            <img src="./img/parking.svg" alt="" id="header-logo">
+            <div id="header-msg" class="pl-3 pr-3 align-self-center">Parking Lot - Administrador</div>
+            <button type="button" id="cerrarSesion" class="btn btn-danger ">Cerrar Sesion</button>
+        </div>
+        <nav class="nav nav-pills flex-column flex-sm-row" id="navbar">
+            <a class="flex-sm-fill text-sm-center nav-link"  href="index.html">Administrador</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="clientes.html">Clientes</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="empleados.html">Empleados</a>
+            <a class="flex-sm-fill text-sm-center nav-link  active" href="facturacion.html">Facturación</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="tarifas.html">Modificar Tarifas</a>
+          </nav>
+    </header>
+    <main>
+        <div class="conteiner-fluid p-3 mt-5 mb-5 w-50 mx-auto titulo-pag" >
+            <h3 class="text-center">Generar Factura</h3>
+        </div>
+        <div class="facturador conteiner mx-auto d-flex justify-content-center ">
+            <select class="form-select" >
+                <option selected>Seleciona Tipo de Factura</option>
+                <option value="1">Factura A</option>
+                <option value="2">Factura B</option>
+                <option value="3">Factura C</option>
+                <option value="3">Consumidor Final</option>
+            </select>
+        </div>
+        <div class="conteiner d-flex flex-column   mx-auto w-50">
+            <form>
+                <div class="mb-3">
+                  <label  class="form-label">Clientes</label>
+                  <input class="form-control" placeholder="Numero de Cliente">
+                </div>
+                <div class="mb-3">
+                  <label  class="form-label">Periodo De Facturación</label>
+                  <input  class="form-control" placeholder="Indicar El Preiodo De Facturación">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" >
+                  <label class="form-check-label" >Enviar Factura Al Mail</label>
+                </div>
+                <div class="d-flex justify-content-center mb-3">
+                    <button type="submit" class="jus btn btn-primary">Generar Factura</button>
+                </div>
+              </form>
+        </div>
+    </main>
+    <footer>
+        <h6 class="d-flex justify-content-center">**Parking Lot - Todos Los Derechos Reservados - 2022**</h6>  
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+</html>
