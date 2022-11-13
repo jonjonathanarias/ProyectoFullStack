@@ -30,7 +30,7 @@ button.addEventListener('click', function() {
 //Funcion redirigir pagina
 function goadmin(){
     setTimeout(function(){
-        window.location.href = "../admin/index.html";
+        window.location.href = "admin/index.html";
     }, 1500);
 }
 

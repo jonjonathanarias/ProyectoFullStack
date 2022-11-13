@@ -5,7 +5,7 @@ cerrarSesion.addEventListener('click', function(i){
     i.preventDefault(confirm('¿Esta Seguro que desea Cerrar Sesion?'))
     if (confirm){
         setTimeout(function(){
-            window.location.href = "../inicio de sesion/index.html";
+            window.location.href = "../index.html";
         }, 800);
     }
 });
