@@ -4,14 +4,12 @@
 	box-sizing: border-box;
 }
 
-
 body {
 	font-family: 'Open Sans', sans-serif;
 	background-image: url(/Images/imagen-aerea-estacionamiento-lleno-cerca-centro-comercial_76020-123.jpg);
 	background-repeat:no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	
 }
 
 
@@ -43,11 +41,92 @@ body {
 	font-size: 20px;
 	border-radius: 5px;
 	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	transition: .1s ease all;
+	border: 5px solid;
+	line-height: 45px;
+	transition: .3s ease all;
 }
 
-.formulario .btn:hover {
-    background-color: hsl(231, 97%, 55%);
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
 }
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+
+
+.formulario__input:focus {
+	border: 3px solid hsl(231, 97%, 55%);
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 30px;
+	margin-bottom: 0;
+	display: none;
+	background-color: #bb2929;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 4px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
 
 #btnOne{
     background-color:hsl(231, 97%, 55%);
@@ -58,21 +137,6 @@ body {
     outline:none;
 }
 
-.nuevocliente .btn {
-	width: 100%;
-	border: none;
-	background: hsl(231, 78%, 56%);
-	color: lightblue;
-	cursor: pointer;
-	padding: 20px;
-	font-size: 20px;
-	border-radius: 5px;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.nuevocliente .btn:hover {
-    background-color: hsl(231, 97%, 55%);
-}
 
 #header-msg{
     font-size: 50px;
@@ -80,19 +144,8 @@ body {
 	background-color: hsl(231, 78%, 56%);
 }
 
-.header-video {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	overflow: hidden;
-  }
+
   
-  .header-video video {
-	min-width: 100%;
-	min-height: 100%;
-  }
   
   .header-overlay {
 	height: 100vh;
@@ -120,4 +173,27 @@ body {
 	display: block;
 	padding-bottom: 2rem;
   }
+
+
+
+/* ----- -----   Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
 
