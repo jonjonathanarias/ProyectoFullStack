@@ -29,7 +29,7 @@ def pedirDatosRegistro():
                 print("El Numero de Cliente Debe Ser Auto-Incremental")    
         else:
             print("Corrobora El numero del Cliente anterior!") 
-    #numeroCliente= int(input("Ingrese Numero de Cliente: "))            
+               
     nombre= input("Ingrese el Nombre del Cliente: ")
     apellido= input("Ingrese el Apellido del Cliente: ")
     telefono= input("Ingrese el Telefono del Cliente: ")
@@ -38,51 +38,36 @@ def pedirDatosRegistro():
 
  
 
-    cliente=(dni, numeroCliente, nombre, apellido, telefono, email)
+    cliente=(dni, nombre, apellido, telefono, email)
     return cliente
 
-"""def pedirDatosActualizacion(cursos):
-    listarCursos(cursos)
+def pedirDatosActualizacion(clientes):
+    listarClientes(clientes)
 
-    existeCodigo=False
+    
 
-    codigoEditar= input("Ingrese el Codigo del Curso a Editar: ")
-    codigoEditar=int(codigoEditar)
-    for cur in cursos:
-        if cur[0] == codigoEditar:
-            existeCodigo=True
-            break
+    dniEditar= int(input("Ingrese el DNI del Cliente a Editar: "))
+   
+    
+        
+    nombre= input("Ingrese Nombre a Modificar: ")
+    apellido= input("Ingrese Apellido a Modificar: ")
+    telefono= input("Ingresar El Telefono a Modificar: ")
+    email= input("Ingresar Email a Modificar: ")
 
-    if existeCodigo:
-        Nombre= input("Ingrese Nombre a Modificar: ")
+    cliente=(nombre, apellido, telefono, email, dniEditar)  
 
-        creditoCorrecto=False
-        while(not creditoCorrecto):
-            Creditos= input("Ingrese Creditos a Modificar: ")
-            if Creditos.isnumeric():
-                if (int(Creditos) > 0):
-                    creditoCorrecto=True
-                    Creditos=int(Creditos)
-                else:
-                    print("Los Creditos Deben ser Mayor a 0")
-            else:
-                print("Credito incorrecto debe ser un numero unicamente")
-
-        curso=(codigoEditar, Nombre, Creditos)                    
-    else:
-        curso= None
-
-    return curso        """
+    return cliente       
 
 def pedirDatosEliminacion(clientes):
     listarClientes(clientes)
 
     
 
-    dniClienteEliminar= input("Ingrese el dni de Cliente a Eliminar: ")
-    dniClienteEliminar=int(dniClienteEliminar)
+    dniClienteEliminar=int(input("Ingrese el dni de Cliente a Eliminar: "))
     
-    for cli in clientes:
-        
-        if cli[0] ==  dniClienteEliminar:
-            return dniClienteEliminar   
+    
+    
+    clienteEliminar= dniClienteEliminar
+
+    return clienteEliminar     

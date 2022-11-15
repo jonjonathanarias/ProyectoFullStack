@@ -2,8 +2,8 @@ from sqlite3 import Cursor
 import mysql.connector
 from mysql.connector import Error
 
-#clase data access object
-class DAO:
+
+class TablaCliente:
     #defino el constructor 
     def __init__(self):
         try:
@@ -48,25 +48,22 @@ class DAO:
         if self.conexion.is_connected():
             try:
                 cursor= self.conexion.cursor()
-                sql= "UPDATE cliente SET nombre = '{0}', Creditos = {1} WHERE Codigo = {2}"
-                cursor.execute(sql.format(cliente[1], cliente[2], cliente[0]))
+                sql= "UPDATE cliente SET nombre = '{0}', apellido = '{1}', telefono = '{2}', email = '{3}' WHERE dni_cliente = {4};"
+                cursor.execute(sql.format(cliente[0], cliente[1], cliente[2], cliente[3], cliente[4]))
                 self.conexion.commit()
                 print("Cliente Actualizado!\n")
             except Error as ex:
                 print('Error al intentar conectarse con la base de datos: {0}'.format(ex)) 
-            finally:
-                if self.conexion.is_connected():
-                    self.conexion.close()
-                    print("Conexion cerrada")
+            
 
 
     #---------Eliminar Cliente---------
-    def eliminar_cliente(self, dniClienteEliminar):
+    def eliminar_cliente(self, clienteEliminar):
         if self.conexion.is_connected():
             try:
                 cursor= self.conexion.cursor()
                 sql= "DELETE FROM cliente WHERE dni_cliente = {0}"
-                cursor.excecute(sql.format(dniClienteEliminar))
+                cursor.execute(sql.format(clienteEliminar))
                 self.conexion.commit()
                 print("Cliente Eliminado")
             except Error as ex:

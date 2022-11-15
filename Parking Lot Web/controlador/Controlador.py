@@ -3,7 +3,7 @@ import sys
 sys.path.append('D:/ProyectoFullStack/ProyectoFullStack/Parking Lot Web/modelo/DB')
 sys.path.append('D:/ProyectoFullStack/ProyectoFullStack/Parking Lot Web/modelo')
 import Funciones
-from Conexion import DAO
+from Conexion import TablaCliente
 
 
 def menu_principal():
@@ -34,12 +34,12 @@ def menu_principal():
                 ejecutarOpcion(opcion)
 
 def ejecutarOpcion(opcion):
-    dao= DAO()
+    datos= TablaCliente()
 
     #------Listar Cursos-------
     if opcion==1:
         try:
-            clientes= dao.listar_clientes()
+            clientes= datos.listar_clientes()
             if len(clientes)>0:
                 Funciones.listarClientes(clientes)
             else:
@@ -53,7 +53,7 @@ def ejecutarOpcion(opcion):
     elif opcion==2:
         cliente= Funciones.pedirDatosRegistro()
         try:
-            dao.registrar_cliente(cliente)
+            datos.registrar_cliente(cliente)
         except:
             print('Ocurrio un Error...')    
 
@@ -61,15 +61,15 @@ def ejecutarOpcion(opcion):
     elif opcion==3:
         try:
 
-            clientes=dao.listar_clientes()
+            clientes=datos.listar_clientes()
             if len(clientes)>0:
                 cliente= Funciones.pedirDatosActualizacion(clientes)
                 if cliente:
-                    dao.actualizar_cliente(cliente)
+                    datos.actualizar_cliente(cliente)
                 else:
                     print("dni del clinete a actualizar no encontrado")        
             else:
-                print('No se han encotrado cursos')
+                print('No se han encotrado Cliente')
         except:
             print("Ocurrio un Problema...")
     
@@ -78,16 +78,16 @@ def ejecutarOpcion(opcion):
     #---------Eliminar Cursos---------------    
     elif opcion==4:
         try:
-            clientes=dao.listar_clientes()
-            if len(clientes)>0:
-                dniClienteEliminar= Funciones.pedirDatosEliminacion(clientes)
-                if not (dniClienteEliminar ==""):
-                    dao.eliminar_cliente(dniClienteEliminar)
-                else:
-                    print("Numero de Cliente  no Encontrado\n")    
-            else:
-                print('No se han encotrado cursos')
 
+            clientes=datos.listar_clientes()
+            if len(clientes)>0:
+                cliente= Funciones.pedirDatosEliminacion(clientes)
+                if cliente:
+                    datos.eliminar_cliente(cliente)
+                else:
+                    print("Dni del Clinete a actualizar no encontrado")        
+            else:
+                print('No se han encotrado Cliente')
         except Exception as ex:
             print(str(ex))    
     else:
