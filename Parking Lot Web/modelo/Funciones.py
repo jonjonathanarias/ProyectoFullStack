@@ -8,7 +8,7 @@ def listarClientes(clientes):
         print(" ")
 
 def pedirDatosRegistro():
-    #------------Codigos---------------
+    #------------DNI Correcto---------------
     dniCorrecto=False
     while(not dniCorrecto):
         dni= input("Ingrese el Dni del Cliente: ")
@@ -38,7 +38,7 @@ def pedirDatosRegistro():
 
  
 
-    cliente=(dni, nombre, apellido, telefono, email)
+    cliente=(dni, numeroCliente, nombre, apellido, telefono, email)
     return cliente
 
 def pedirDatosActualizacion(clientes):

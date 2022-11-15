@@ -36,7 +36,7 @@ def menu_principal():
 def ejecutarOpcion(opcion):
     datos= TablaCliente()
 
-    #------Listar Cursos-------
+    #------Listar Clientes-------
     if opcion==1:
         try:
             clientes= datos.listar_clientes()
@@ -49,15 +49,15 @@ def ejecutarOpcion(opcion):
             print('Ocurrio un Error...')
 
 
-    #----------Registrar Cursos----------------        
+    #----------Registrar Clientes----------------        
     elif opcion==2:
         cliente= Funciones.pedirDatosRegistro()
         try:
             datos.registrar_cliente(cliente)
-        except:
-            print('Ocurrio un Error...')    
+        except Exception as ex:
+            print(str(ex))    
 
-    #----------Actualizar Cursos---------------        
+    #----------Actualizar Clientes---------------        
     elif opcion==3:
         try:
 
@@ -75,7 +75,7 @@ def ejecutarOpcion(opcion):
     
 
 
-    #---------Eliminar Cursos---------------    
+    #---------Eliminar Cliente---------------    
     elif opcion==4:
         try:
 

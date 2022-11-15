@@ -18,6 +18,7 @@ class TablaCliente:
         except Error as ex:
             print('Error al intentar conectar con la Base de Datos: {0}'.fotmat(ex))
 
+    #--------Listar Cliente--------
     def listar_clientes(self):
         if self.conexion.is_connected():
             try:
@@ -29,7 +30,7 @@ class TablaCliente:
             except Error as ex:
                 print('Error al intentar conectar con la Base de Datos: {0}'.fotmat(ex))
                
-
+    #------Registrar Cliente-------
     def registrar_cliente(self, cliente):
         if self.conexion.is_connected():
             try:
