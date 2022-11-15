@@ -23,7 +23,7 @@ class TablaCliente:
         if self.conexion.is_connected():
             try:
                 cursor= self.conexion.cursor()
-                cursor.execute("SELECT * FROM cliente ORDER BY nombre ASC")
+                cursor.execute("SELECT * FROM cliente ORDER BY numero_cliente ASC")
                 resultado= cursor.fetchall()
                 return resultado
 
