@@ -1,0 +1,199 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-image: url(/Images/imagen-aerea-estacionamiento-lleno-cerca-centro-comercial_76020-123.jpg);
+	background-repeat:no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+
+.contenedor {
+	max-width: 90%;
+	width: 400px;
+	margin: 80px auto;
+}
+
+.formulario input[type='text'] {
+	padding: 20px;
+	border: none;
+	background: #fff;
+	width: 100%;
+	border-radius: 5px;
+	box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	font-size: 20px;
+	margin-bottom: 20px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.formulario .btn {
+	width: 100%;
+	border: none;
+	background: hsl(231, 78%, 56%);
+	color: #fff;
+	cursor: pointer;
+	padding: 20px;
+	font-size: 20px;
+	border-radius: 5px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: bold;
+	transition: .1s ease all;
+	border: 5px solid;
+	line-height: 45px;
+	transition: .3s ease all;
+}
+
+
+.formulario__label {
+	display: block;
+	font-weight: 700;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.formulario__grupo-input {
+	position: relative;
+}
+
+
+
+.formulario__input:focus {
+	border: 3px solid hsl(231, 97%, 55%);
+	outline: none;
+	box-shadow: 3px 0px 30px rgba(163,163,163, 0.4);
+}
+
+.formulario__input-error {
+	font-size: 30px;
+	margin-bottom: 0;
+	display: none;
+	background-color: #bb2929;
+}
+
+.formulario__input-error-activo {
+	display: block;
+}
+
+.formulario__validacion-estado {
+	position: absolute;
+	right: 10px;
+	bottom: 15px;
+	z-index: 100;
+	font-size: 16px;
+	opacity: 0;
+}
+
+.formulario__checkbox {
+	margin-right: 10px;
+}
+
+
+
+.formulario__mensaje {
+	height: 45px;
+	line-height: 45px;
+	background: #F66060;
+	padding: 0 15px;
+	border-radius: 3px;
+	display: none;
+}
+
+.formulario__mensaje-activo {
+	display: block;
+}
+
+.formulario__mensaje p {
+	margin: 0;
+}
+
+
+
+.formulario__btn:hover {
+	box-shadow: 3px 0px 30px rgba(163,163,163, 1);
+}
+
+.formulario__mensaje-exito {
+	font-size: 4px;
+	color: #119200;
+	display: none;
+}
+
+.formulario__mensaje-exito-activo {
+	display: block;
+}
+
+
+#btnOne{
+    background-color:hsl(231, 97%, 55%);
+    color:white;
+}
+#btnOne:focus,#btnOne:hover{
+    box-shadow: none;
+    outline:none;
+}
+
+
+#header-msg{
+    font-size: 50px;
+    color: hsl(0, 0%, 100%);
+	background-color: hsl(231, 78%, 56%);
+}
+
+
+  
+  
+  .header-overlay {
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: #303952;
+	z-index: 1;
+	opacity: .85;
+  }
+  
+  .header-content {
+	z-index: 2;
+  }
+  
+  .header-content h1 {
+	font-size: 50px;
+	margin-bottom: 0;
+	font-family: 'Lobster', cursive;
+  }
+  
+  .header-content p {
+	font-size: 1.5rem;
+	display: block;
+	padding-bottom: 2rem;
+  }
+
+
+
+/* ----- -----   Validacion ----- ----- */
+.formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+
+

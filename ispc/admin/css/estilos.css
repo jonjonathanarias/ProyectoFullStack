@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html{
+    height: 100%;
+    
+}
+body{
+    background-color: lightblue;
+    margin: 0;
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+header{
+    background-color:  hsl(231, 97%, 55%);
+}
+#header-logo{
+    width:64px;
+    height:64px;
+}
+#header-msg{
+    font-size: 2rem;
+    color: white;
+}
+
+#navbar{
+    background-color: hsl(231, 80%, 79%);
+   
+}
+.nav-link.active{
+    background-color:  hsl(231, 97%, 55%) !important;
+}
+.btn-seccion{
+    background-color: hsl(231, 80%, 79%);
+    color: white;
+    right: 100%;
+    padding: 0;
+    margin: 0;
+}
+.titulo-pag{
+    padding: 10px;   
+    border-radius: 5px;
+    background-color: hsl(231, 97%, 55%);
+    color: white;
+    vertical-align: middle;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+#cabecera{
+   background-color: hsl(231, 80%, 55%);
+}
+
+footer{
+    background-color:  hsl(231, 97%, 55%);
+    width: 100%;
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: auto;
+    
+}
+/*Tabla de tarifas*/
+.tabla-tarifas{
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.Titulo-Tarifa-periodo{
+    background-color:  hsl(231, 97%, 55%);
+    width: 100%;
+    color: white;
+    vertical-align: middle;
+}
+/*Para seccion Facturacion*/
+.facturador{
+    background-color: azure;
+    width: 300px;
+    padding: 10px;
+    border-style: 1px ;
+    border-radius: 5px;
+    
+}
+
+
+/*para la Tabla De Clientes*/
+
+.centrado {
+    text-align: center !important;
+    vertical-align: middle !important;
+}
+
+@media (max-width: 600px) {
+    header{
+        text-align: center;
+    }
+    .header-content{
+        flex-wrap: wrap;
+    }
+    .nav-link{
+        text-align: center !important;
+
+    }
+    
+}    

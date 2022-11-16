@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>QR</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+		<link rel="stylesheet" href="/generadorticket.css" />
+		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+		<script defer src="/tickets.js"></script>
+	</head>
+	<body >
+		
+		<div class="contenedor">
+			
+            <select id="formulario2" class="formulario2">
+                    <option>Automovil</option>
+                    <option>Motocicleta</option>
+                    <option>bicicleta</option>
+            </select>
+        
+            <form action="" id="formulario" class="formulario">
+				<input type="text" id="patenteqr" placeholder="numero de patente" />
+				<button class="btn">Generar QR</button>
+			</form>
+
+            <a href="index.html"> <id="imprimir2" class="imprimir">
+				<button class="btn" onclick="alertar('imprimiendo ticket')">Imprimir</button>
+			</a>
+        
+              <script type="text/javascript">
+                  function alertar(texto) { alert(texto);}</script>
+			<div id="contenedorQR" class="contenedorQR"></div>
+		</div>
+	</body>
+</html>
+
