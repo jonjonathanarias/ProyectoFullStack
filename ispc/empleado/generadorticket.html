@@ -8,19 +8,42 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
-		<link rel="stylesheet" href="/generadorticket.css" />
+		<link rel="stylesheet" href="generadorticket.css" />
 		<script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 		<script defer src="/tickets.js"></script>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 	</head>
 	<body >
-		
+		  
+		<header class="header content">
+			<div class="header-video">
+			  <video src="Images/pexels-oleh-shtohryn-5587732 (1).mp4" autoplay loop></video>
+			</div>
+			<div class="header-overlay"></div>
+			  <div class="header-content d-flex justify-content-center p-2">
+				  <img src="./Images/parking.svg" alt="" id="header-logo">
+				  <div id="header-msg" class="ml-5 align-self-center">Parking Lot </div>  
+				  <a href="/ispc/index.html"><button id="btn3" onclick="alertar('se esta imprimiendo su turno')">Cerrar sesión</button>
+					<script type="text/javascript">
+						function alertar(texto) { alert(texto);}</script></a>   
+		  </header>
+		  </div>
+		  <div id="reloj" class="header-content d-flex justify-content-center p-2">
+		  00 : 00 : 00
+		 </div>
+		  <div class="btn-group btn-group-lg d-flex justify-content-center p-2">
+			<a href="generadorticket.html"><button type="button" class="btn btn-default" id="btnOne">Ingresar patente</button></a>
+			<a href="nuevocliente.html"><button type="button" class="btn btn-default" id="btnOne">Agregar nuevo cliente</button></a>
+			<a href="cobros.html"><button type="button" class="btn btn-default" id="btnOne">Cobros</button></a>
+		  </div>
 		<div class="contenedor">
-			
-            <select id="formulario2" class="formulario2">
-                    <option>Automovil</option>
-                    <option>Motocicleta</option>
-                    <option>bicicleta</option>
-            </select>
+			<select class="form-select" aria-label="Default select example">
+				<option selected>Automovil</option>
+				<option value="1">Camioneta</option>
+				<option value="2">Moto</option>
+				<option value="3">Bicicleta</option>
+			  </select>
         
             <form action="" id="formulario" class="formulario">
 				<input type="text" id="patenteqr" placeholder="numero de patente" />
@@ -35,6 +58,7 @@
                   function alertar(texto) { alert(texto);}</script>
 			<div id="contenedorQR" class="contenedorQR"></div>
 		</div>
+		<script src="./JS/core.js"></script>
 	</body>
 </html>
 
