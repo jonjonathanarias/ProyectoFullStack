@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" type="image/png" href="Images/logo2.png"/>
+    <title>ParkingLot</title>
+</head>
+
+<body style="background: linear-gradient(70deg, rgb(49, 39, 39), rgb(111, 218, 245));">
+    
+    <header class="header content">
+      <div class="header-video">
+        <video src="Images/pexels-oleh-shtohryn-5587732 (1).mp4" autoplay loop></video>
+      </div>
+      <div class="header-overlay"></div>
+        <div class="header-content d-flex justify-content-center p-2">
+            <img src="./Images/parking.svg" alt="" id="header-logo">
+            <div id="header-msg" class="ml-5 align-self-center">Parking Lot </div>  
+            <a href="/index.html"><button id="btn3" onclick="alertar('se esta imprimiendo su turno')">Cerrar sesión</button>
+              <script type="text/javascript">
+                  function alertar(texto) { alert(texto);}</script></a>   
+    </header>
+    </div>
+    <div id="reloj" class="header-content d-flex justify-content-center p-2">
+    00 : 00 : 00
+   </div>
+    <div class="btn-group btn-group-lg d-flex justify-content-center p-2">
+      <a href="generadorticket.html"><button type="button" class="btn btn-default" id="btnOne">Ingresar patente</button></a>
+      <a href="nuevocliente.html"><button type="button" class="btn btn-default" id="btnOne">Agregar nuevo cliente</button></a>
+      <a href="cobros.html"><button type="button" class="btn btn-default" id="btnOne">Cobros</button></a>
+    </div>
+    <div class="table-container mt-5 mb-5 w-75 mx-auto" >
+            <h5 class="text-center mb-3">Búsqueda de autos</h5>
+            <input type="text" class="w-100 mb-3" id="busqueda" placeholder="Búsqueda...">
+            <table class="table table-striped shadow " id="tabla">
+                    <thead class="text-white" id="cabecera">
+                      <tr>
+                        <th scope="col">Dueño</th>
+                        <th scope="col">Modelo</th>
+                        <th scope="col">Patente</th>
+                       
+                      </tr>
+                    </thead>
+                    <tbody id="Tabla">
+                     
+                    </tbody>
+                  </table>
+    </div>
+    <script src="./JS/bootstrap.min.js"></script>
+    <script src="./JS/core.js"></script>
+</body>
+    
+</html>
