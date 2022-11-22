@@ -36,7 +36,7 @@ function goadmin(){
 
 function goempleado(){
     setTimeout(function(){
-        window.location.href = "empleado.html";
+        window.location.href = "empleado/index.html";
     }, 1500);
 }
 

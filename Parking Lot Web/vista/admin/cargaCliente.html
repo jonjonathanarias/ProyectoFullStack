@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripción" content="Dedicao al Sistema de Gestion de Estacionamientos">
+    <meta name="keywords" content="Estacionamiento, Control de Gestion">
+    <title>Parking Lot - Sitio Web</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <!--Estilos-->
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+<body>
+    <header>
+        <div class="header-content d-flex justify-content-center p-3">
+            <img src="./img/parking.svg" alt="" class="img-fluid" id="header-logo">
+            <div id="header-msg" class="pl-3 pr-3 align-self-center">Parking Lot - Administrador</div>
+            <button type="button" id="cerrarSesion" class="btn btn-danger">Cerrar Sesion</button>
+        </div>
+        
+        <nav class="nav nav-pills flex-column flex-sm-row " id="navbar">
+            <a class="flex-sm-fill text-sm-center nav-link active" href="index.html">Administrador</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="clientes.html">Clientes</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="empleados.html">Empleados</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="facturacion.html">Facturación</a>
+            <a class="flex-sm-fill text-sm-center nav-link" href="tarifas.html">Modificar Tarifas</a>
+          </nav>
+    </header>
+    <main>
+        <div class="conteiner-fluid p-3 mt-5 mb-5 w-50 mx-auto titulo-pag" >
+            <h3 class="text-center">Cargar Clientes</h3>
+        </div>
+        <form action="">
+            <div class="d-flex justify-content-center">
+                <div class="conteiner d-flex flex-column mx-auto w-50">
+                    <div class="col-auto">
+                        <label for="inputNombre" class="col-form-label">Nombre:</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="Nombre" id="inputNombre" class="form-control" aria-describedby="Nombre" placeholder="Ingrese Nombre">
+                    </div>
+                    <div class="col-auto">
+                        <label for="inputApellido" class="col-form-label">Apellido:</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="apellido" id="inputApellido" class="form-control" aria-describedby="Apellido" placeholder="Ingrese Apellido">
+                    </div>
+                    <div class="col-auto TelefonoDni">
+                        <div class=" conteiner-fluid DNI-Pasaporte w-50">
+                            <label for="inputDniPassaporte" class="col-form-label">DNI - Pasaporte:</label>
+                            <input type="DNI-Pasaporte" id="inputDniPassaporte" class="form-control" aria-describedby="DNI - Pasaporte" placeholder="Ingrese DNI - Pasaporte">
+                        </div>
+                        <div class="conteiner-fluid Telefofo ml-4 w-50">
+                            <label for="inputTelefono" class="col-form-label">Telefono:</label>
+                            <input type="apellido" id="inputTelefono" class="form-control "  aria-describedby="Telefono" placeholder="Ingrese Telefono">
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <label for="inputEmail" class="col-form-label">Email:</label>
+                    </div>
+                    <div class="col-auto mb-3">
+                        <input type="email" id="inputEmail" class="form-control" aria-describedby="Email" placeholder="Ejemplo@email.com">
+                    </div>
+                    <div class="botones-Envio"></div>
+                    <button type="submit" class="btn btn-primary w-50">Enviar</button>
+                    <button type="button" class="btn-danger w-50">Cancelar</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <h6 class="d-flex justify-content-center">**Parking Lot - Todos Los Derechos Reservados - 2022**</h6>
+    </footer>
+    <!--Script JS-->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
